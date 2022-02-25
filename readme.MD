@@ -1,0 +1,4 @@
+- Không được inline styles css -> sửa lại thành External styles css -> css trong file index.css tui vừa tạo cho bạn.
+- Do css tui thấy bạn dump trên 1 file html nhiều -> tạo 1 file css rồi import nó vô file html
+- Tui sẽ sửa cho bạn coi cục Meet our Helper -> bạn đưa kiểu v -> bị lead chửi đã
+- Sau này mỗi 1 control là 1 commit đễ người review đỡ bị đau mắt -> chẳng hạn làm xong header thì commit lên

@@ -8,262 +8,11 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-    <style>
-        .header-top{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding: 4px 32px  4px 4px;
-        }
-        .box-header {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            position: absolute;
-            padding: 4px 32px  4px 4px;
-            left: 65%;
-            width: 180px;
-            height: 36px;
-            top: 4px;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-            border-radius: 50px;
-        }
-        .box-header__Item img{
-            position: absolute;
-            top: 10%;
-            left: 3%;
-        }
-        .box-header__Item i {
-            position: absolute;
-            color: white;
-            border: solid black;
-            left: 6.57%;
-            top: 22%;
-        }
-        
-        .box-header__Item p {
-            position: absolute;
-            font-size: 20px;
-            font-weight: normal;
-            font-family: Poppins;
-            align-items: center;
-            left: 30%;
-            bottom: -10px;
-        }
-        
-        .phone-header {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            position: absolute;
-            padding: 4px 32px  4px 4px;
-            left: 80%;
-            width: 180px;
-            height: 36px;
-            top: 4px;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-            border-radius: 50px;
-        }
-        .phone-header__Item img{
-            position: absolute;
-            top: 10%;
-            left: 3%;
-        }
-        .phone-header__Item i {
-            position: absolute;
-            color: white;
-            border: solid black;
-            left: 8.57%;
-            top: 24%;
-        }
-        
-        .phone-header__Item p {
-            position: absolute;
-            font-size: 20px;
-            font-weight: normal;
-            font-family: Poppins;
-            align-items: center;
-            left: 30%;
-            bottom: -10px;
-        }
-        .header-wapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding: 4px 32px  4px 4px;
-            background: black;
-            height: 50px;
-            border: 0.5px solid black;
-        }
-        .header-wapper-item {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            color: #FFFFFF;
-            list-style-type: none !important;
-            text-align: center;
-            margin-left: 110px;
-        }
-        .header-wapper-item-info {
-            display: block;
-        }
-        .text-banner-title {
-            /* position: absolute; */
-            width: 100%;
-            height: 136px;
-            /* left: 500px;
-            top: 142px; */
-            text-align: center;
-            font-size: 56px;
-            font-weight: bold;
-            font-family: Poppins;
-            text-transform: capitalize;
-            
-        }
-        .text-banner-des {
-            /* position: absolute; */
-            width: 100%;
-            height: 136px;
-            /* left: 500px;
-            top: 350px; */
-            text-align: center;
-            font-size: 16px;
-            font-weight: normal;
-            font-family: Poppins;
-            text-transform: capitalize;
-            color: #6D6D6D;
-            
-        }
-        .Box-list  {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);   
-        }
-        .Box-list__Item {
-            width: 100%;
-            display: block;
-            text-align: center;
-            border: 1px solid black;
-            border-radius: 10px;
-            margin-bottom: 24px;
-            margin-right: -100px; 
-            margin-left: 100px;
-            height: 80px;         
-
-        }
-        .Box-list__Item--action {
-            display: block;
-            margin-left: 120px;
-            margin-top: 0px;
-        }
-
-        .text-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .title-text-list {
-            display: block;
-            width: 278px;
-            height: 48px;
-            margin-left: 120px;
-            margin-bottom: 30px;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 32px;
-            line-height: 48px;
-        }
-        .view-all {
-            display: block;
-            width: 278px;
-            height: 48px;
-            margin-left: 400px;
-            margin-top: 25px;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-        }
-        .list-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding-top: 40px;
-            
-        }
-        .list-container__Item {
-            display: block;
-            text-align: center;
-            width: 50%;
-            background-color: rgba(230, 217, 217, 0.2);
-            border-radius: 24px;
-            background-clip: padding-box;
-            box-shadow: 4px 8px 24px rgb(0 0 0 / 4%);
-            margin-bottom: 24px;
-            margin-left: 90px;
-            
-        }
-        .list-container__Item img {
-            max-width: 100%;
-            position: relative;
-            border-radius:24px;
-        }
-        .list-container__Item--info {
-            display: block;
-            margin-left: 10px;
-            text-align: left;
-        }
-        .list-container__Item--info ul {
-            display: block;
-        
-        }
-        .footer {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background: black;
-            padding: 15px;
-        }
-        .footer-logo {
-            display: block;
-            text-align: left;
-            margin-left: 90px;
-            color: #FFFFFF;
-        }
-        .footer-logo-1 {
-            display:grid ;
-            grid-template-columns: repeat(4, 1fr);
-        }
-        .footer-logo-Item {
-            display: block;
-            color: #FFFFFF;
-        }
-        .image-logo {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            padding-right: 465px;
-        }
-        .image-logo-item {
-            display: block;
-            text-align: center;
-            padding-bottom: 30px;
-            width: 15px;
-            height: 20px;
-            margin-left: 90px;
-        }
-        .image-logo-item a {
-            color: red;
-            text-decoration: none;
-            margin-top: 10px;
-            
-        }
-        .text-footer-item {
-            color: #FFFFFF;
-            margin-top: -20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <title>White glove</title>
 </head>
 <body>
     <!-- Header Top-->
-    <!--  -->
     <div>
         <div class="header-top">
             <div class="logo-header">
@@ -287,28 +36,35 @@
         <!--Login-Register-->
         <div class="header-wapper">
             <ul class="header-wapper-item">
+                    <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
+
                 <li ><a href="#" style="color: #FFFFFF;text-decoration: none;">Search For A Helper</a></li>
                 <li ><a href="#" style="color: #FFFFFF;text-decoration: none;"> Favorite (520)</a></li>
                 <li ><a href="#" style="color: #FFFFFF;text-decoration: none;"> Contact Me</a></li>
-                
+                <!-- ----------------------------------------------- -->
             </ul>
             <div class="header-wapper-item">
                 <div class="header-wapper-item--info">
+                    <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
+
                     <button style="border-radius: 15px;
                     width: 115px;height: 43px;
                     background: content-box;
                     border: 1px solid #FFFFFF;
                     margin-left: 200px;">
                         <p style="color: white;font-size: 16px;margin-top: 10px;font-weight: bold;">Register</p>
+                    <!-- ----------------------------------------------- -->
                     </button>
                 </div>
                 <div class="header-wapper-item--info">
+                    <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
                     <button style="border-radius: 15px;
                     width: 115px;height: 43px;
                     background: white;
                     border: 1px solid #FFFFFF;
                     margin-right: 10px;">
                     <p style="color:black;font-size: 16px;margin-top: 10px;font-weight: bold;">Login</p>
+                    <!-- ----------------------------------------------- -->
                     </button>
                 </div>
             </div>
@@ -356,11 +112,13 @@
             <div class="list-container__Item">
                 <img src="image/Rectangle 51.jpg" alt="list-img" />
                 <div class="list-container__Item--info">
+                    <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
                     <p style="font-family: Poppins;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 36px;">Esther</p>
+                    <!-- ----------------------------------------------- -->
                     <p>Available 04/2021 </p>
                     <ul>
                         <li>Hiring Type: Transfer</li>
@@ -372,11 +130,13 @@
             <div class="list-container__Item">
                 <img src="image/Rectangle 52.jpg" alt="list-img" />
                 <div class="list-container__Item--info">
+                    <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
                     <p style="font-family: Poppins;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 36px;">Esther</p>
+                    <!-- ----------------------------------------------- -->
                     <p>Available 04/2021 </p>
                     <ul>
                         <li>Hiring Type: Transfer</li>
@@ -388,11 +148,13 @@
             <div class="list-container__Item">
                 <img src="image/Rectangle 53.jpg" alt="list-img" />
                 <div class="list-container__Item--info">
+                    <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
                     <p style="font-family: Poppins;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 36px;">Esther</p>
+                <!-- ----------------------------------------------- -->
                     <p>Available 04/2021 </p>
                     <ul>
                         <li>Hiring Type: Transfer</li>
@@ -403,6 +165,7 @@
             </div>
         </div>
         <!--Footer-->
+        <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
         <div class="footer">
             <div class="footer-logo">
                 <p style="font-family: Poppins;
@@ -441,6 +204,7 @@
                     line-height: 20px;">Contact Police</p>
                 </div>
             </div>
+            <!-- ----------------------------------------------- -->
             <!--image logo-->
             <div class="image-logo">
                 <div class="image-logo-item">
@@ -455,8 +219,9 @@
                 <div class="image-logo-item">
                     <a href="#" class="fa fa-google-plus"></a>
                 </div>
-                
             </div>
+
+            <!-- KHÔNG ĐƯỢC INLINE STYLE CSS ! -->
             <div class="text-footer-item">
                 <p style="font-family: Poppins;
                 font-style: normal;
@@ -465,8 +230,6 @@
                 line-height: 20px;">Copyright White Glove Pte. Ltd. All Right Reserved. We are a fully licensed <br/>agency with MOM. EA 19C9581 - UEN 201901495Z</p>
             </div>
         </div>
-        
-        
      </div>   
 </body>
 </html>
