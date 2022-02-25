@@ -8,3 +8,5 @@
 - Nhừng className --> viết thường hết.
 - Ko phải css trên fig ma có gi là copy hết nha, hợp lý mới lấy
 - Tui đã fix xong nhưng style css chưa làm bạn làm lại cho tui => review code và FIX COMMENT nha
+- Bể layout nào check kĩ giúp tui ---> ây da -> bạn làm ẩu nha -> check lại giúp tui header, footer nhoa.
+- Fighting !!!! <3 <3 <3
