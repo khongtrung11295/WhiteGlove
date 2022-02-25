@@ -2,3 +2,9 @@
 - Do css tui thấy bạn dump trên 1 file html nhiều -> tạo 1 file css rồi import nó vô file html
 - Tui sẽ sửa cho bạn coi cục Meet our Helper -> bạn đưa kiểu v -> bị lead chửi đã
 - Sau này mỗi 1 control là 1 commit đễ người review đỡ bị đau mắt -> chẳng hạn làm xong header thì commit lên
+- Tải hình có file PNG or SVG thôi
+- Đổi lại tên hình cho có ý nghĩa -> ko phải download hình về sao là để tên hình v luôn
+- Tất cả các select nên cho nó 1 className
+- Nhừng className --> viết thường hết.
+- Ko phải css trên fig ma có gi là copy hết nha, hợp lý mới lấy
+- Tui đã fix xong nhưng style css chưa làm bạn làm lại cho tui => review code và FIX COMMENT nha
